@@ -1,32 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VEDRONGA - Creando Innovación</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Inicio - VEDRONGA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">VEDRONGA</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="documentos.html">Documentos</a></li>
-        </ul>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">VEDRONGA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentos.html">Documentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <h1>BIENVENIDOS A VEDRONGA</h1>
+        <p>En VEDRONGA CREANDO INNOVACIÓN somos una empresa dedicada a ofrecer servicios profesionales con drones, enfocados en la inspección, monitoreo y registro audiovisual de alta precisión. Nuestra misión es brindar soluciones tecnológicas que generen confianza, seguridad y resultados de calidad para nuestros clientes.
+
+Nos caracterizamos por nuestra honestidad, actuando siempre con transparencia y responsabilidad en cada proyecto. El cumplimiento es nuestro compromiso: respetamos los tiempos y estándares acordados, garantizando eficiencia y satisfacción en cada entrega.
+
+El profesionalismo de nuestro equipo se refleja en cada detalle, aplicando buenas prácticas operativas y protocolos de seguridad que protegen tanto a nuestros colaboradores como a los entornos donde trabajamos. Valoramos el bienestar humano, porque entendemos que el éxito nace del respeto, la integridad y el trabajo en equipo.
+
+Con una visión innovadora y tecnología de vanguardia, VEDRONGA CREANDO INNOVACIÓN se posiciona como un aliado estratégico para empresas y entidades que buscan resultados precisos, éticos y sostenibles. 
+</p>
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div class="container mt-4">
+        <h2 class="mb-4">Nuestro Portafolio</h2>
+        <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-md-4 mb-3">
+                <img src="img/img1.jpg" class="img-fluid rounded shadow"
+                     alt="Ejemplo 1" data-bs-toggle="modal" data-bs-target="#modalImg1">
+            </div>
+            <!-- Imagen 2 -->
+            <div class="col-md-4 mb-3">
+                <img src="img/img2.jpg" class="img-fluid rounded shadow"
+                     alt="Ejemplo 2" data-bs-toggle="modal" data-bs-target="#modalImg2">
+            </div>
+            <!-- Imagen 3 -->
+            <div class="col-md-4 mb-3">
+                <img src="img/img3.jpg" class="img-fluid rounded shadow"
+                     alt="Ejemplo 3" data-bs-toggle="modal" data-bs-target="#modalImg3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales fullscreen para imágenes -->
+    <div class="modal fade" id="modalImg1" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <img src="img/img1.jpg" class="img-fluid" alt="Ejemplo 1">
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Contenido principal -->
-  <div class="container text-center mt-5">
-    <h1 class="text-primary">Bienvenido a VEDRONGA</h1>
-    <p class="lead">Presentamos nuestros servicios de inspección, monitoreo y producción audiovisual con drones.</p>
-    <a href="/certificadoidoneidad.pdf" class="btn btn-success mt-3">Ver Certificado</a>
-  </div>
+    <div class="modal fade" id="modalImg2" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <img src="img/img2.jpg" class="img-fluid" alt="Ejemplo 2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalImg3" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <img src="img/img3.jpg" class="img-fluid" alt="Ejemplo 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>© 2026 VEDRONGA CREANDO INNOVACIÓN</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

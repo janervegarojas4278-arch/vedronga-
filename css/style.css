@@ -152,3 +152,78 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+footer a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+footer a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+/* Botones de documentos */
+.container a {
+    text-decoration: none;
+    margin: 5px;
+}
+/* Botones de documentos y redes sociales */
+footer a, .container a {
+    text-decoration: none;
+    margin: 5px;
+}
+.modal-body img {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.modal-body img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+.modal-body img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+/* Estilo para las pestañas del navbar */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;       /* letra más grande */
+  font-weight: bold;       /* negrita */
+  text-transform: uppercase; /* todo en mayúsculas */
+  padding: 10px 20px;      /* más espacio alrededor */
+  margin: 0 10px;          /* separación entre pestañas */
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.navbar-nav .nav-link:hover {
+  color: #ffcc00;          /* color dorado al hover */
+  transform: scale(1.1);   /* efecto de agrandar */
+}
+
+/* Pestaña activa */
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: #007bff; /* azul de Bootstrap */
+  border-radius: 8px;
+}
+/* Fondo general */
+body {
+  background-image: url("img/fondo.jpg"); /* tu imagen en carpeta img */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Contenedor de documentos */
+.container {
+  max-width: 900px;
+}
+
+/* Botones */
+.btn {
+  min-width: 250px;
+}
+
