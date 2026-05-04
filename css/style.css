@@ -152,7 +152,6 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
-<<<<<<< HEAD
 footer a {
     text-decoration: none;
     margin: 0 5px;
@@ -228,17 +227,109 @@ body {
   min-width: 250px;
 }
 
-=======
+.footer {
+  background-color: #121212;   /* color oscuro */
+  color: #fff;                 /* texto blanco */
+  text-align: center;          /* centrar contenido */
+  padding: 30px 0;             /* espacio arriba y abajo */
+  margin-top: 50px;            /* separación respecto al contenido */
+}
+
+.footer p {
+  margin-bottom: 15px;         /* espacio entre texto y botones */
+}
+
+.social-links a {
+  margin: 0 10px;              /* espacio horizontal entre botones */
+}
+/* Centrado general de la página */
 body {
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda la altura de la ventana */
+  margin: 0;
 }
 
-h1 {
-  color: #0d6efd; /* azul bootstrap */
+/* Contenido principal centrado */
+section {
+  flex: 1; /* empuja el footer hacia abajo */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra horizontal */
+  justify-content: center; /* centra vertical */
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.navbar {
-  margin-bottom: 20px;
+/* Footer como cinta centrada */
+footer {
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* se queda abajo */
 }
->>>>>>> 12f4faa9e7225e456ba0f7340f48c93783d6fe74
+/* Fondo general */
+body {
+  background-color: #f4f4f4;   /* gris claro para contraste */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección principal */
+section {
+  max-width: 900px;            /* ancho máximo */
+  margin: 60px auto;           /* centrado con espacio arriba/abajo */
+  text-align: center;
+  background: #fff;            /* fondo blanco para resaltar */
+  padding: 40px;
+  border-radius: 12px;         /* bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+}
+
+/* Título */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Botones */
+section a.btn {
+  min-width: 220px;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+/* Fondo general para todas las páginas */
+body {
+  background-image: url("img/fondo.jpg"); /* ruta de tu imagen */
+  background-size: cover;                 /* que cubra toda la pantalla */
+  background-position: center;            /* centrada */
+  background-attachment: fixed;           /* efecto fijo al hacer scroll */
+  margin: 0;
+  padding: 0;
+}
+section {
+  background-color: rgba(255, 255, 255, 0.85); /* blanco semitransparente */
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 60px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}

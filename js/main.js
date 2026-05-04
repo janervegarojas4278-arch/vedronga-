@@ -20,3 +20,19 @@ document.addEventListener("DOMContentLoaded", () => {
   loadComponent("contacto", "contacto.html");
   loadComponent("footer", "footer.html");
 });
+function loadComponent(id, file) {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+        });
+}
+
+// Cargar componentes
+loadComponent("navbar", "components/navbar.html");
+loadComponent("gallery", "components/gallery.html");
+loadComponent("footer", "components/footer.html");
+
+// Para documentos.html
+loadComponent("pdf-buttons", "components/pdf-buttons.html");
+

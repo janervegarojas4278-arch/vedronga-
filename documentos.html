@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Documentos - VEDRONGA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos</title>
+  <!-- Bootstrap primero -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tu CSS después -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Menú de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="index.html">VEDRONGA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="documentos.html">Documentos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Sección de documentos -->
-    <div class="container mt-5 text-center">
-        <h1 class="mb-5 fw-bold">DOCUMENTOS</h1>
-
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="public/certificado_idoneidad.pdf" target="_blank" class="btn btn-primary btn-lg">
-                Certificado de Idoneidad
-            </a>
-            <a href="public/certificado_piloto.pdf" target="_blank" class="btn btn-success btn-lg">
-                Certificado Piloto
-            </a>
-            <a href="public/credencial.pdf" target="_blank" class="btn btn-warning btn-lg">
-                Credencial
-            </a>
-            <a href="public/registro_dron_dji_air2s.pdf" target="_blank" class="btn btn-danger btn-lg">
-                Registro Dron DJI Air2S
-            </a>
-        </div>
+  <!-- Aquí va tu menú, botones y footer -->
+</body>
+</html>
+<body>
+  <!-- Menú -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">VEDRONGA</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="documentos.html">Documentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- Sección Documentos -->
+  <<section class="text-center my-5">
+  <h2>DOCUMENTOS</h2>
 
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0 fw-bold text-uppercase">© 2026 VEDRONGA CREANDO INNOVACIÓN</p>
-    </footer>
+  <!-- Botón azul -->
+  <a href="public/certificado_idoneidad.pdf" target="_blank" class="btn btn-primary mx-2">
+    Certificado de Idoneidad
+  </a>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Botón verde -->
+  <a href="public/certificado_piloto.pdf" target="_blank" class="btn btn-success mx-2">
+    Certificado Piloto
+  </a>
+
+  <!-- Botón amarillo -->
+  <a href="public/credencial.pdf" target="_blank" class="btn btn-warning mx-2">
+    Credencial
+  </a>
+
+  <!-- Botón rojo -->
+  <a href="public/registro_dron_dji_air2s.pdf" target="_blank" class="btn btn-danger mx-2">
+    Registro Dron DJI Air2S
+  </a>
+</section>
+  <footer class="text-center mt-5 text-muted">
+  
+  </footer>
+   <footer class="bg-dark text-white text-center py-3 mt-4">
+  <p>© 2026 VEDRONGA CREANDO INNOVACIÓN</p>
+
+</footer>
 </body>
 </html>
